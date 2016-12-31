@@ -56,6 +56,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="SinglePlayerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6H2-vx-CSI"/>
                                     <segue destination="Zua-hd-hTE" kind="popoverPresentation" popoverAnchorView="ot3-ou-ePH" id="akF-eT-ksK">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
+		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */; };
 		97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
+		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardButtonViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		49A090281E175D7700B4B4AB /* Background Music */ = {
 			isa = PBXGroup;
 			children = (
+				49A0902B1E17632300B4B4AB /* MBC.mp3 */,
 				49A090291E175D9100B4B4AB /* Oh yeah.mp3 */,
 			);
 			path = "Background Music";
@@ -170,6 +173,7 @@
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
 				49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */,
+				49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
