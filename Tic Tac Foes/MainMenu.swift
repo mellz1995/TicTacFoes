@@ -7,8 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainMenu: UIViewController {
+    
+    var mainMenuMusic: AVAudioPlayer? = {
+        guard let url = Bundle.main.url(forResource: "Oh yeah", withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.numberOfLoops = -1
+            return player
+        } catch {
+            return nil
+        }
+    }()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

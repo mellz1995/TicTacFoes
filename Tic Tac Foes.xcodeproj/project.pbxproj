@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */; };
 		97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardButtonViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A090271E175D7700B4B4AB /* Audio Files */ = {
+			isa = PBXGroup;
+			children = (
+				49A090281E175D7700B4B4AB /* Background Music */,
+			);
+			path = "Audio Files";
+			sourceTree = "<group>";
+		};
+		49A090281E175D7700B4B4AB /* Background Music */ = {
+			isa = PBXGroup;
+			children = (
+				49A090291E175D9100B4B4AB /* Oh yeah.mp3 */,
+			);
+			path = "Background Music";
+			sourceTree = "<group>";
+		};
 		97E36D271E17291000EFDD53 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +96,7 @@
 				97E36D3F1E17291000EFDD53 /* LaunchScreen.storyboard */,
 				97E36D421E17291000EFDD53 /* Info.plist */,
 				97E36D3A1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld */,
+				49A090271E175D7700B4B4AB /* Audio Files */,
 			);
 			path = "Tic Tac Foes";
 			sourceTree = "<group>";
@@ -116,6 +135,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = CHJKR7KP9V;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -145,6 +169,7 @@
 				97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
+				49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
