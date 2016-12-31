@@ -11,6 +11,7 @@ import AVFoundation
 
 class MainMenu: UIViewController {
     
+    //Variables
     var buttonPressedSound: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "MBC", withExtension: "mp3") else {
             return nil
@@ -23,13 +24,6 @@ class MainMenu: UIViewController {
             return nil
         }
     }()
-    
-    @IBAction func SinglePlayerButtonAction(_ sender: Any) {
-        buttonPressedSound?.play()
-    }
-    
-    
-    
     
     var mainMenuMusic: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "Oh yeah", withExtension: "mp3") else {
@@ -45,7 +39,12 @@ class MainMenu: UIViewController {
     }()
     
     
-
+    //Buttons
+    @IBAction func SinglePlayerButtonAction(_ sender: Any) {
+        buttonPressedSound?.play()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainMenuMusic?.play()
