@@ -42,6 +42,7 @@ class MainMenu: UIViewController {
     //Buttons
     @IBAction func SinglePlayerButtonAction(_ sender: Any) {
         buttonPressedSound?.play()
+        mainMenuMusic?.stop()
     }
     
     
