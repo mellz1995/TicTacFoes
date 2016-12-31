@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492142591E17ECC10016E577 /* Splatter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 492142581E17ECC10016E577 /* Splatter.mp3 */; };
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492142581E17ECC10016E577 /* Splatter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Splatter.mp3; sourceTree = "<group>"; };
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		49A090281E175D7700B4B4AB /* Background Music */ = {
 			isa = PBXGroup;
 			children = (
+				492142581E17ECC10016E577 /* Splatter.mp3 */,
 				49A0902B1E17632300B4B4AB /* MBC.mp3 */,
 				49A090291E175D9100B4B4AB /* Oh yeah.mp3 */,
 			);
@@ -194,6 +197,7 @@
 				49A090371E1770F100B4B4AB /* nought.png in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
 				49A090351E1770F100B4B4AB /* board.png in Resources */,
+				492142591E17ECC10016E577 /* Splatter.mp3 in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
 				49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */,
 				49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */,

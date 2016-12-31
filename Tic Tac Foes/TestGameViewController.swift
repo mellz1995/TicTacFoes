@@ -23,6 +23,19 @@ class TestGameViewController: UIViewController {
         }
     }()
     
+    var battleMusic: AVAudioPlayer? = {
+        guard let url = Bundle.main.url(forResource: "Splatter", withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.numberOfLoops = 0
+            return player
+        } catch {
+            return nil
+        }
+    }()
+    
     //1 is noughts, 2 is crosses
     var activePlayer = 1
     
@@ -106,6 +119,9 @@ class TestGameViewController: UIViewController {
         
         winnerLabel.center = CGPoint(x: winnerLabel.center.x - 500, y: winnerLabel.center.y)
         playAgainButton.center = CGPoint(x: playAgainButton.center.x - 500, y: playAgainButton.center.y)
+        
+        //Play battleMusic
+        battleMusic?.play()
     }
 
     override func didReceiveMemoryWarning() {
