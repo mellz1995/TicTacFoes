@@ -394,7 +394,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="090105-Board.png" translatesAutoresizingMaskIntoConstraints="NO" id="T5W-77-b1h">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="090105-Board.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="T5W-77-b1h">
                                 <rect key="frame" x="16" y="175" width="343" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -634,7 +634,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="090105-Board.png" width="226" height="224"/>
+        <image name="090105-Board.jpeg" width="226" height="224"/>
         <image name="board.png" width="744" height="783"/>
         <image name="nought.png" width="214" height="214"/>
     </resources>
