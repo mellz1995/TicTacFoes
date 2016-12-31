@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97E36D341E17291000EFDD53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E36D331E17291000EFDD53 /* AppDelegate.swift */; };
-		97E36D361E17291000EFDD53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E36D351E17291000EFDD53 /* ViewController.swift */; };
+		97E36D361E17291000EFDD53 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E36D351E17291000EFDD53 /* MainMenu.swift */; };
 		97E36D391E17291000EFDD53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E36D371E17291000EFDD53 /* Main.storyboard */; };
 		97E36D3C1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97E36D3A1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld */; };
 		97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E36D3D1E17291000EFDD53 /* Assets.xcassets */; };
 		97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E36D3F1E17291000EFDD53 /* LaunchScreen.storyboard */; };
+		97E36D491E172B2200EFDD53 /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E36D481E172B2200EFDD53 /* SinglePlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97E36D301E17291000EFDD53 /* Tic Tac Foes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Tac Foes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E36D331E17291000EFDD53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97E36D351E17291000EFDD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97E36D351E17291000EFDD53 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		97E36D381E17291000EFDD53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97E36D3B1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tic_Tac_Foes.xcdatamodel; sourceTree = "<group>"; };
 		97E36D3D1E17291000EFDD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E36D401E17291000EFDD53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97E36D421E17291000EFDD53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E36D481E172B2200EFDD53 /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				97E36D331E17291000EFDD53 /* AppDelegate.swift */,
-				97E36D351E17291000EFDD53 /* ViewController.swift */,
+				97E36D351E17291000EFDD53 /* MainMenu.swift */,
 				97E36D371E17291000EFDD53 /* Main.storyboard */,
+				97E36D481E172B2200EFDD53 /* SinglePlayerViewController.swift */,
 				97E36D3D1E17291000EFDD53 /* Assets.xcassets */,
 				97E36D3F1E17291000EFDD53 /* LaunchScreen.storyboard */,
 				97E36D421E17291000EFDD53 /* Info.plist */,
 				97E36D3A1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld */,
+				97843A451E17425800BAA222 /* EasyButtonViewController.swift */,
 			);
 			path = "Tic Tac Foes";
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E36D361E17291000EFDD53 /* ViewController.swift in Sources */,
+				97E36D361E17291000EFDD53 /* MainMenu.swift in Sources */,
+				97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */,
 				97E36D3C1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld in Sources */,
+				97E36D491E172B2200EFDD53 /* SinglePlayerViewController.swift in Sources */,
 				97E36D341E17291000EFDD53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +314,7 @@
 				97E36D471E17291000EFDD53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

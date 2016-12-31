@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainMenu.swift
 //  Tic Tac Foes
 //
 //  Created by Christopher Donelson on 12/30/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainMenu: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
