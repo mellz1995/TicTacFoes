@@ -10,6 +10,7 @@
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
+		9707DE0C1E17702600C0972C /* tictactoeimages in Resources */ = {isa = PBXBuildFile; fileRef = 9707DE0B1E17702600C0972C /* tictactoeimages */; };
 		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */; };
 		97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */; };
@@ -27,6 +28,7 @@
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
+		9707DE0B1E17702600C0972C /* tictactoeimages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tictactoeimages; path = ../../../Downloads/tictactoeimages; sourceTree = "<group>"; };
 		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardButtonViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				97E36D3F1E17291000EFDD53 /* LaunchScreen.storyboard */,
 				97E36D421E17291000EFDD53 /* Info.plist */,
 				97E36D3A1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld */,
+				9707DE0B1E17702600C0972C /* tictactoeimages */,
 				49A090271E175D7700B4B4AB /* Audio Files */,
 			);
 			path = "Tic Tac Foes";
@@ -177,6 +180,7 @@
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
 				49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */,
 				49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */,
+				9707DE0C1E17702600C0972C /* tictactoeimages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
