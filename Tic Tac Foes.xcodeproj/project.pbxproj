@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
+		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
 		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */; };
 		97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
+		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
 		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardButtonViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				97E36D331E17291000EFDD53 /* AppDelegate.swift */,
 				97E36D351E17291000EFDD53 /* MainMenu.swift */,
 				97E36D371E17291000EFDD53 /* Main.storyboard */,
+				49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */,
 				97B58D101E17588000D25DA1 /* MusicSwitchViewController.swift */,
 				97843A451E17425800BAA222 /* EasyButtonViewController.swift */,
 				97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */,
@@ -187,6 +190,7 @@
 				97E36D361E17291000EFDD53 /* MainMenu.swift in Sources */,
 				97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */,
 				97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */,
+				49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */,
 				97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */,
 				97B58D111E17588000D25DA1 /* MusicSwitchViewController.swift in Sources */,
 				97E36D3C1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld in Sources */,

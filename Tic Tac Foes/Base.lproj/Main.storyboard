@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nMo-jD-Iya">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -198,6 +198,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0P0-6U-B9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4382" y="-1690"/>
+        </scene>
+        <!--Test Game View Controller-->
+        <scene sceneID="C8g-sN-pXm">
+            <objects>
+                <viewController id="nMo-jD-Iya" customClass="TestGameViewController" customModule="Tic_Tac_Foes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gJ9-ig-7IZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xzK-6l-HQM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Z3-4e-7td">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN0-Mm-fRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="-2368"/>
         </scene>
         <!--Single Player View Controller-->
         <scene sceneID="YSc-Z9-xaQ">
