@@ -10,7 +10,6 @@
 		492142591E17ECC10016E577 /* Splatter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 492142581E17ECC10016E577 /* Splatter.mp3 */; };
 		4921425D1E17F48C0016E577 /* Test4x4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */; };
 		4921425F1E17FDD30016E577 /* 090105-Board.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4921425E1E17FDD30016E577 /* 090105-Board.jpeg */; };
-		492142611E17FEEC0016E577 /* 090105-Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 492142601E17FEEC0016E577 /* 090105-Board.png */; };
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
@@ -34,7 +33,6 @@
 		492142581E17ECC10016E577 /* Splatter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Splatter.mp3; sourceTree = "<group>"; };
 		4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test4x4ViewController.swift; sourceTree = "<group>"; };
 		4921425E1E17FDD30016E577 /* 090105-Board.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "090105-Board.jpeg"; sourceTree = "<group>"; };
-		492142601E17FEEC0016E577 /* 090105-Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "090105-Board.png"; sourceTree = "<group>"; };
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 		49A090311E1770F100B4B4AB /* tictactoeimages */ = {
 			isa = PBXGroup;
 			children = (
-				492142601E17FEEC0016E577 /* 090105-Board.png */,
 				4921425E1E17FDD30016E577 /* 090105-Board.jpeg */,
 				49A090321E1770F100B4B4AB /* board.png */,
 				49A090331E1770F100B4B4AB /* cross.png */,
@@ -205,7 +202,6 @@
 				97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */,
 				49A090371E1770F100B4B4AB /* nought.png in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
-				492142611E17FEEC0016E577 /* 090105-Board.png in Resources */,
 				49A090351E1770F100B4B4AB /* board.png in Resources */,
 				492142591E17ECC10016E577 /* Splatter.mp3 in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,

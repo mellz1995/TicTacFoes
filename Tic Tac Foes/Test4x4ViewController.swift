@@ -53,7 +53,7 @@ class Test4x4ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
         buttonPressedSound?.play()
-        print(sender.tag)
+        //print(sender.tag)
         let activePosition = sender.tag - 1
         
         if gameState[activePosition] == 0 && activeGame{
@@ -68,13 +68,33 @@ class Test4x4ViewController: UIViewController {
                 sender.setImage(UIImage(named: "cross.png"), for: [])
                 activePlayer = 1
             }
-    }
+            
+            for combination in winningCombinations{
+                if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[2]] == gameState[combination[3]]{
+                    
+                    //We have a winner!
+                    activeGame = false
+                    //winnerLabel.isHidden = false
+                    //playAgainButton.isHidden = false
+                    
+                    if gameState[combination[0]] == 1{
+                        //winnerLabel.text = "Noughts has won!"
+                    }
+                        
+                    else {
+                        //winnerLabel.text = "Crosses has won!"
+                    }
+                    
+                    UIView.animate(withDuration: 1, animations: {
+                        //self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
+                        //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
+                    })
+                }
+            }
+        }
 }
-    
-    
-    
-    
-    
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
