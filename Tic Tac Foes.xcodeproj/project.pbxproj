@@ -10,6 +10,9 @@
 		492142591E17ECC10016E577 /* Splatter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 492142581E17ECC10016E577 /* Splatter.mp3 */; };
 		4921425D1E17F48C0016E577 /* Test4x4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */; };
 		4921425F1E17FDD30016E577 /* 090105-Board.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4921425E1E17FDD30016E577 /* 090105-Board.jpeg */; };
+		49562F041E19DC9300D583E2 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49562F031E19DC9300D583E2 /* GamePlayViewController.swift */; };
+		49562F061E19DD3600D583E2 /* chessnossm9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49562F051E19DD3600D583E2 /* chessnossm9.gif */; };
+		49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */; };
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
@@ -33,6 +36,9 @@
 		492142581E17ECC10016E577 /* Splatter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Splatter.mp3; sourceTree = "<group>"; };
 		4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test4x4ViewController.swift; sourceTree = "<group>"; };
 		4921425E1E17FDD30016E577 /* 090105-Board.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "090105-Board.jpeg"; sourceTree = "<group>"; };
+		49562F031E19DC9300D583E2 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		49562F051E19DD3600D583E2 /* chessnossm9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chessnossm9.gif; sourceTree = "<group>"; };
+		49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "401px-digitizationgrid1a.png"; sourceTree = "<group>"; };
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				4921425E1E17FDD30016E577 /* 090105-Board.jpeg */,
+				49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */,
+				49562F051E19DD3600D583E2 /* chessnossm9.gif */,
 				49A090321E1770F100B4B4AB /* board.png */,
 				49A090331E1770F100B4B4AB /* cross.png */,
 				49A090341E1770F100B4B4AB /* nought.png */,
@@ -116,6 +124,7 @@
 				97E36D331E17291000EFDD53 /* AppDelegate.swift */,
 				97E36D351E17291000EFDD53 /* MainMenu.swift */,
 				97E36D371E17291000EFDD53 /* Main.storyboard */,
+				49562F031E19DC9300D583E2 /* GamePlayViewController.swift */,
 				4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */,
 				49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */,
 				97B58D101E17588000D25DA1 /* MusicSwitchViewController.swift */,
@@ -202,10 +211,12 @@
 				97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */,
 				49A090371E1770F100B4B4AB /* nought.png in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
+				49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */,
 				49A090351E1770F100B4B4AB /* board.png in Resources */,
 				492142591E17ECC10016E577 /* Splatter.mp3 in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
 				4921425F1E17FDD30016E577 /* 090105-Board.jpeg in Resources */,
+				49562F061E19DD3600D583E2 /* chessnossm9.gif in Resources */,
 				49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */,
 				49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */,
 			);
@@ -224,6 +235,7 @@
 				4921425D1E17F48C0016E577 /* Test4x4ViewController.swift in Sources */,
 				49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */,
 				97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */,
+				49562F041E19DC9300D583E2 /* GamePlayViewController.swift in Sources */,
 				97B58D111E17588000D25DA1 /* MusicSwitchViewController.swift in Sources */,
 				97E36D3C1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld in Sources */,
 				97E36D491E172B2200EFDD53 /* SinglePlayerViewController.swift in Sources */,

@@ -32,7 +32,7 @@ class Test4x4ViewController: UIViewController {
         }
         do {
             let player = try AVAudioPlayer(contentsOf: url)
-            player.numberOfLoops = 0
+            player.numberOfLoops = -1
             return player
         } catch {
             return nil
@@ -72,6 +72,9 @@ class Test4x4ViewController: UIViewController {
             for combination in winningCombinations{
                 if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[2]] == gameState[combination[3]]{
                     
+                   print("Game Over")
+                   winnerLabel2.text = "Game Over!"
+                    
                     //We have a winner!
                     activeGame = false
                     //winnerLabel.isHidden = false
@@ -94,6 +97,10 @@ class Test4x4ViewController: UIViewController {
         }
 }
 
+    @IBAction func mainMenuButton(_ sender: AnyObject) {
+        battleMusic?.stop()
+    }
+    @IBOutlet var winnerLabel2: UILabel!
 
 
     override func viewDidLoad() {
@@ -101,6 +108,8 @@ class Test4x4ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         battleMusic?.play()
+        
+        //self.winnerLabel2.text = " "
     }
 
     override func didReceiveMemoryWarning() {
