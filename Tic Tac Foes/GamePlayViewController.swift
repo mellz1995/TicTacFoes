@@ -10,6 +10,11 @@ import UIKit
 import AVFoundation
 
 class GamePlayViewController: UIViewController {
+    
+    //To keep up with the number of moves a player has
+    var player1Moves = 0
+    var player2Moves = 0
+    
     var buttonPressedSound: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "MBC", withExtension: "mp3") else {
             return nil
@@ -110,11 +115,15 @@ class GamePlayViewController: UIViewController {
             
             if activePlayer == 1{
                 sender.setImage(UIImage(named: "nought.png"), for: [])
+                player1Moves += 1
+                player1MovesLabel.text = String(player1Moves)
                 activePlayer = 2
             }
                 
             else {
                 sender.setImage(UIImage(named: "cross.png"), for: [])
+                player2Moves += 1
+                player2MovesLabel.text = String(player2Moves)
                 activePlayer = 1
             }
             //print(sender.tag)
@@ -146,6 +155,10 @@ class GamePlayViewController: UIViewController {
     @IBAction func mainMenuButton(_ sender: AnyObject) {
             battleMusic?.stop()
     }
+    
+    @IBOutlet weak var player1MovesLabel: UILabel!
+    @IBOutlet weak var player2MovesLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
