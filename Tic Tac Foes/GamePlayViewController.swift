@@ -73,11 +73,17 @@ class GamePlayViewController: UIViewController {
     ]
     
     @IBOutlet weak var winnerLabel: UILabel!
-    @IBOutlet weak var playAgainButton: UIButton!
+   // @IBOutlet weak var playAgainButton: UIButton!
+    /*
     @IBAction func playAgain(_ sender: AnyObject) {
         activeGame = true
         activePlayer = 1
-        gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        gameState = [0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0]
         var _: UIButton
         
         for i in 1..<10{
@@ -93,7 +99,7 @@ class GamePlayViewController: UIViewController {
         playAgainButton.center = CGPoint(x: playAgainButton.center.x - 500, y: playAgainButton.center.y)
         
     }
-    
+    */
     @IBAction func buttonPressed(_ sender: AnyObject) {
         buttonPressedSound?.play()
         
@@ -113,12 +119,12 @@ class GamePlayViewController: UIViewController {
             }
             //print(sender.tag)
             for combination in winningCombinations{
-                if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]{
+                if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[2]] == gameState[combination[3]]{
                     
                     //We have a winner!
                     activeGame = false
                     winnerLabel.isHidden = false
-                    playAgainButton.isHidden = false
+                    //playAgainButton.isHidden = false
                     
                     if gameState[combination[0]] == 1{
                         winnerLabel.text = "Noughts has won!"
@@ -130,21 +136,25 @@ class GamePlayViewController: UIViewController {
                     
                     UIView.animate(withDuration: 1, animations: {
                         self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
-                        self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
+                        //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
                     })
                 }
             }
         }
     }
     
+    @IBAction func mainMenuButton(_ sender: AnyObject) {
+            battleMusic?.stop()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         winnerLabel.isHidden = true
-        playAgainButton.isHidden = true
+        //playAgainButton.isHidden = true
         
         winnerLabel.center = CGPoint(x: winnerLabel.center.x - 500, y: winnerLabel.center.y)
-        playAgainButton.center = CGPoint(x: playAgainButton.center.x - 500, y: playAgainButton.center.y)
+        //playAgainButton.center = CGPoint(x: playAgainButton.center.x - 500, y: playAgainButton.center.y)
         
         //Play battleMusic
         battleMusic?.play()
