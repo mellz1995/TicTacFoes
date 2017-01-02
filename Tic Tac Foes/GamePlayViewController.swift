@@ -26,44 +26,7 @@ class GamePlayViewController: UIViewController {
     @IBOutlet weak var player2MovesLabel: UILabel!
     @IBOutlet weak var winnerLabel: UILabel!
     
-    @IBOutlet weak var buttonOutlet1: UIButton!
-    @IBOutlet weak var buttonOutlet2: UIButton!
-    @IBOutlet weak var buttonOutlet3: UIButton!
-    @IBOutlet weak var buttonOutlet4: UIButton!
-    @IBOutlet weak var buttonOutlet5: UIButton!
-    @IBOutlet weak var buttonOutlet6: UIButton!
-    @IBOutlet weak var buttonOutlet7: UIButton!
-    @IBOutlet weak var buttonOutlet8: UIButton!
-    @IBOutlet weak var buttonOutlet9: UIButton!
-    @IBOutlet weak var buttonOutlet10: UIButton!
-    @IBOutlet weak var buttonOutlet11: UIButton!
-    @IBOutlet weak var buttonOutlet12: UIButton!
-    @IBOutlet weak var buttonOutlet13: UIButton!
-    @IBOutlet weak var buttonOutlet14: UIButton!
-    @IBOutlet weak var buttonOutlet15: UIButton!
-    @IBOutlet weak var buttonOutlet16: UIButton!
-    @IBOutlet weak var buttonOutlet17: UIButton!
-    @IBOutlet weak var buttonOutlet18: UIButton!
-    @IBOutlet weak var buttonOutlet19: UIButton!
-    @IBOutlet weak var buttonOutlet20: UIButton!
-    @IBOutlet weak var buttonOutlet21: UIButton!
-    @IBOutlet weak var buttonOutlet22: UIButton!
-    @IBOutlet weak var buttonOutlet23: UIButton!
-    @IBOutlet weak var buttonOutlet24: UIButton!
-    @IBOutlet weak var buttonOutlet25: UIButton!
-    @IBOutlet weak var buttonOutlet26: UIButton!
-    @IBOutlet weak var buttonOutlet27: UIButton!
-    @IBOutlet weak var buttonOutlet28: UIButton!
-    @IBOutlet weak var buttonOutlet29: UIButton!
-    @IBOutlet weak var buttonOutlet30: UIButton!
-    @IBOutlet weak var buttonOutlet31: UIButton!
-    @IBOutlet weak var buttonOutlet32: UIButton!
-    @IBOutlet weak var buttonOutlet33: UIButton!
-    @IBOutlet weak var buttonOutlet34: UIButton!
-    @IBOutlet weak var buttonOutlet35: UIButton!
-    @IBOutlet weak var buttonOutlet36: UIButton!
-    
-    
+    //Array of Button Outlets
     @IBOutlet var buttonCollection: [UIButton]!
     
     // 0 = empty, 1 = naughts, 2 = crosses

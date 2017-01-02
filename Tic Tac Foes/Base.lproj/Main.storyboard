@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
                                 <rect key="frame" x="121" y="86.5" width="196" height="77.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="v6e-lv-ga0"/>
@@ -75,7 +75,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
                                 <rect key="frame" x="16" y="180" width="343" height="192"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-V8-46N">
@@ -84,7 +84,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
                                 <rect key="frame" x="16" y="28" width="65" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="GrE-ag-rQl"/>
@@ -102,7 +102,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
                                 <rect key="frame" x="72" y="92" width="51" height="66.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="woY-oq-Nbi"/>
@@ -831,42 +831,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="buttonOutlet1" destination="WBZ-rF-TMm" id="5jj-N4-q1m"/>
-                        <outlet property="buttonOutlet10" destination="dAp-1s-J70" id="2W8-S5-LXE"/>
-                        <outlet property="buttonOutlet11" destination="kZJ-gC-rmR" id="Q5D-nZ-pld"/>
-                        <outlet property="buttonOutlet12" destination="223-RZ-BB8" id="dW1-iP-h0g"/>
-                        <outlet property="buttonOutlet13" destination="jfc-ra-TlF" id="LZK-Nh-XrH"/>
-                        <outlet property="buttonOutlet14" destination="VCu-YI-mb5" id="aZJ-ES-r5h"/>
-                        <outlet property="buttonOutlet15" destination="hwl-lj-b3n" id="Y6j-T8-HLU"/>
-                        <outlet property="buttonOutlet16" destination="faS-9X-yqr" id="yoQ-JB-3QO"/>
-                        <outlet property="buttonOutlet17" destination="Hma-8t-CJO" id="4xc-Qx-kEn"/>
-                        <outlet property="buttonOutlet18" destination="eUS-sc-BfL" id="ynn-qm-ZU5"/>
-                        <outlet property="buttonOutlet19" destination="OJ4-Su-jl4" id="Rnu-qT-Zli"/>
-                        <outlet property="buttonOutlet2" destination="oTX-IN-NV8" id="ivG-2f-UcS"/>
-                        <outlet property="buttonOutlet20" destination="ITY-sg-g2I" id="3Is-OI-u3D"/>
-                        <outlet property="buttonOutlet21" destination="VR6-DU-IP7" id="BL5-6J-39k"/>
-                        <outlet property="buttonOutlet22" destination="hqV-RX-Im5" id="qOp-hM-ROc"/>
-                        <outlet property="buttonOutlet23" destination="cMX-5F-PlB" id="4pw-nN-UZr"/>
-                        <outlet property="buttonOutlet24" destination="L6k-zd-cEd" id="Ug4-K9-BUC"/>
-                        <outlet property="buttonOutlet25" destination="vO4-Wg-ZmK" id="JQS-Wk-Uyr"/>
-                        <outlet property="buttonOutlet26" destination="dvW-G7-euD" id="ssB-VB-xqY"/>
-                        <outlet property="buttonOutlet27" destination="gV0-IT-b1F" id="qfO-mV-6gO"/>
-                        <outlet property="buttonOutlet28" destination="Gir-o5-u2S" id="0iM-CX-VlO"/>
-                        <outlet property="buttonOutlet29" destination="9fi-VA-vgA" id="m9V-1O-Jxn"/>
-                        <outlet property="buttonOutlet3" destination="Ekc-pi-XDz" id="RFf-aD-ZKb"/>
-                        <outlet property="buttonOutlet30" destination="o94-FS-X4Q" id="tAo-ZT-9eQ"/>
-                        <outlet property="buttonOutlet31" destination="YXi-JH-qqj" id="4Gb-u1-bH8"/>
-                        <outlet property="buttonOutlet32" destination="uJx-ww-vP3" id="ejZ-43-GRC"/>
-                        <outlet property="buttonOutlet33" destination="b6Q-ps-IZB" id="3ES-Uz-LE3"/>
-                        <outlet property="buttonOutlet34" destination="yA2-NW-6t6" id="8ti-C8-g0P"/>
-                        <outlet property="buttonOutlet35" destination="W3B-ox-00M" id="2jp-3N-ycs"/>
-                        <outlet property="buttonOutlet36" destination="F50-GH-Ve9" id="g0k-Of-CCa"/>
-                        <outlet property="buttonOutlet4" destination="AEb-lc-rlh" id="xho-Ka-cdE"/>
-                        <outlet property="buttonOutlet5" destination="kBS-Bf-XYZ" id="b2m-bD-GKT"/>
-                        <outlet property="buttonOutlet6" destination="k63-nR-FnA" id="34D-zU-xka"/>
-                        <outlet property="buttonOutlet7" destination="724-9Z-oIu" id="Fd9-as-dto"/>
-                        <outlet property="buttonOutlet8" destination="B4f-Qu-PZQ" id="j6K-eB-MxW"/>
-                        <outlet property="buttonOutlet9" destination="bSc-J3-yBG" id="ipd-w7-kC9"/>
                         <outlet property="player1MovesLabel" destination="agP-KB-X5b" id="V1d-aX-Xgu"/>
                         <outlet property="player2MovesLabel" destination="GW5-8T-F0g" id="JDZ-Fc-L3A"/>
                         <outlet property="winnerLabel" destination="Ixb-1a-bN0" id="6XL-T5-zTL"/>
