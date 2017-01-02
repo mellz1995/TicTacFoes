@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
                                 <rect key="frame" x="121" y="86.5" width="196" height="77.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="v6e-lv-ga0"/>
@@ -75,7 +75,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
                                 <rect key="frame" x="16" y="180" width="343" height="192"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-V8-46N">
@@ -84,7 +84,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
                                 <rect key="frame" x="16" y="28" width="65" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="GrE-ag-rQl"/>
@@ -102,7 +102,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
                                 <rect key="frame" x="72" y="92" width="51" height="66.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="woY-oq-Nbi"/>
@@ -714,14 +714,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UV-B4-Mbw">
-                                <rect key="frame" x="29" y="473" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Line Destroyer"/>
-                                <connections>
-                                    <action selector="player1LineDestroyerButton:" destination="eAE-l0-kGn" eventType="touchUpInside" id="umg-mM-B57"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZF3-L2-KxL">
                                 <rect key="frame" x="37" y="530" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -827,13 +819,93 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-tb-rZa">
+                                <rect key="frame" x="33" y="477" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Line Destroyer"/>
+                                <connections>
+                                    <action selector="playerLineDestroyerButton:" destination="eAE-l0-kGn" eventType="touchUpInside" id="2Wc-xB-Xge"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="buttonOutlet1" destination="WBZ-rF-TMm" id="5jj-N4-q1m"/>
+                        <outlet property="buttonOutlet10" destination="dAp-1s-J70" id="2W8-S5-LXE"/>
+                        <outlet property="buttonOutlet11" destination="kZJ-gC-rmR" id="Q5D-nZ-pld"/>
+                        <outlet property="buttonOutlet12" destination="223-RZ-BB8" id="dW1-iP-h0g"/>
+                        <outlet property="buttonOutlet13" destination="jfc-ra-TlF" id="LZK-Nh-XrH"/>
+                        <outlet property="buttonOutlet14" destination="VCu-YI-mb5" id="aZJ-ES-r5h"/>
+                        <outlet property="buttonOutlet15" destination="hwl-lj-b3n" id="Y6j-T8-HLU"/>
+                        <outlet property="buttonOutlet16" destination="faS-9X-yqr" id="yoQ-JB-3QO"/>
+                        <outlet property="buttonOutlet17" destination="Hma-8t-CJO" id="4xc-Qx-kEn"/>
+                        <outlet property="buttonOutlet18" destination="eUS-sc-BfL" id="ynn-qm-ZU5"/>
+                        <outlet property="buttonOutlet19" destination="OJ4-Su-jl4" id="Rnu-qT-Zli"/>
+                        <outlet property="buttonOutlet2" destination="oTX-IN-NV8" id="ivG-2f-UcS"/>
+                        <outlet property="buttonOutlet20" destination="ITY-sg-g2I" id="3Is-OI-u3D"/>
+                        <outlet property="buttonOutlet21" destination="VR6-DU-IP7" id="BL5-6J-39k"/>
+                        <outlet property="buttonOutlet22" destination="hqV-RX-Im5" id="qOp-hM-ROc"/>
+                        <outlet property="buttonOutlet23" destination="cMX-5F-PlB" id="4pw-nN-UZr"/>
+                        <outlet property="buttonOutlet24" destination="L6k-zd-cEd" id="Ug4-K9-BUC"/>
+                        <outlet property="buttonOutlet25" destination="vO4-Wg-ZmK" id="JQS-Wk-Uyr"/>
+                        <outlet property="buttonOutlet26" destination="dvW-G7-euD" id="ssB-VB-xqY"/>
+                        <outlet property="buttonOutlet27" destination="gV0-IT-b1F" id="qfO-mV-6gO"/>
+                        <outlet property="buttonOutlet28" destination="Gir-o5-u2S" id="0iM-CX-VlO"/>
+                        <outlet property="buttonOutlet29" destination="9fi-VA-vgA" id="m9V-1O-Jxn"/>
+                        <outlet property="buttonOutlet3" destination="Ekc-pi-XDz" id="RFf-aD-ZKb"/>
+                        <outlet property="buttonOutlet30" destination="o94-FS-X4Q" id="tAo-ZT-9eQ"/>
+                        <outlet property="buttonOutlet31" destination="YXi-JH-qqj" id="4Gb-u1-bH8"/>
+                        <outlet property="buttonOutlet32" destination="uJx-ww-vP3" id="ejZ-43-GRC"/>
+                        <outlet property="buttonOutlet33" destination="b6Q-ps-IZB" id="3ES-Uz-LE3"/>
+                        <outlet property="buttonOutlet34" destination="yA2-NW-6t6" id="8ti-C8-g0P"/>
+                        <outlet property="buttonOutlet35" destination="W3B-ox-00M" id="2jp-3N-ycs"/>
+                        <outlet property="buttonOutlet36" destination="F50-GH-Ve9" id="g0k-Of-CCa"/>
+                        <outlet property="buttonOutlet4" destination="AEb-lc-rlh" id="xho-Ka-cdE"/>
+                        <outlet property="buttonOutlet5" destination="kBS-Bf-XYZ" id="b2m-bD-GKT"/>
+                        <outlet property="buttonOutlet6" destination="k63-nR-FnA" id="34D-zU-xka"/>
+                        <outlet property="buttonOutlet7" destination="724-9Z-oIu" id="Fd9-as-dto"/>
+                        <outlet property="buttonOutlet8" destination="B4f-Qu-PZQ" id="j6K-eB-MxW"/>
+                        <outlet property="buttonOutlet9" destination="bSc-J3-yBG" id="ipd-w7-kC9"/>
                         <outlet property="player1MovesLabel" destination="agP-KB-X5b" id="V1d-aX-Xgu"/>
                         <outlet property="player2MovesLabel" destination="GW5-8T-F0g" id="JDZ-Fc-L3A"/>
                         <outlet property="winnerLabel" destination="Ixb-1a-bN0" id="6XL-T5-zTL"/>
+                        <outletCollection property="buttonCollection" destination="WBZ-rF-TMm" collectionClass="NSMutableArray" id="8mo-0e-cQ6"/>
+                        <outletCollection property="buttonCollection" destination="oTX-IN-NV8" collectionClass="NSMutableArray" id="mDZ-2D-m1Q"/>
+                        <outletCollection property="buttonCollection" destination="Ekc-pi-XDz" collectionClass="NSMutableArray" id="E8y-Kb-ObR"/>
+                        <outletCollection property="buttonCollection" destination="AEb-lc-rlh" collectionClass="NSMutableArray" id="Nbo-bf-nvH"/>
+                        <outletCollection property="buttonCollection" destination="kBS-Bf-XYZ" collectionClass="NSMutableArray" id="UIc-98-LHC"/>
+                        <outletCollection property="buttonCollection" destination="k63-nR-FnA" collectionClass="NSMutableArray" id="auG-Ot-x3N"/>
+                        <outletCollection property="buttonCollection" destination="724-9Z-oIu" collectionClass="NSMutableArray" id="mWg-52-cXf"/>
+                        <outletCollection property="buttonCollection" destination="B4f-Qu-PZQ" collectionClass="NSMutableArray" id="aR0-y0-Yuu"/>
+                        <outletCollection property="buttonCollection" destination="bSc-J3-yBG" collectionClass="NSMutableArray" id="31k-gq-f7e"/>
+                        <outletCollection property="buttonCollection" destination="dAp-1s-J70" collectionClass="NSMutableArray" id="dxN-Jl-7q9"/>
+                        <outletCollection property="buttonCollection" destination="kZJ-gC-rmR" collectionClass="NSMutableArray" id="DT8-Rh-33J"/>
+                        <outletCollection property="buttonCollection" destination="223-RZ-BB8" collectionClass="NSMutableArray" id="GN2-EF-8un"/>
+                        <outletCollection property="buttonCollection" destination="jfc-ra-TlF" collectionClass="NSMutableArray" id="EOn-Kp-URG"/>
+                        <outletCollection property="buttonCollection" destination="VCu-YI-mb5" collectionClass="NSMutableArray" id="aFo-mw-jfx"/>
+                        <outletCollection property="buttonCollection" destination="hwl-lj-b3n" collectionClass="NSMutableArray" id="Hmw-1J-VXF"/>
+                        <outletCollection property="buttonCollection" destination="faS-9X-yqr" collectionClass="NSMutableArray" id="d2C-0n-hxd"/>
+                        <outletCollection property="buttonCollection" destination="Hma-8t-CJO" collectionClass="NSMutableArray" id="d4c-Ja-2L2"/>
+                        <outletCollection property="buttonCollection" destination="eUS-sc-BfL" collectionClass="NSMutableArray" id="vhd-fL-rdr"/>
+                        <outletCollection property="buttonCollection" destination="OJ4-Su-jl4" collectionClass="NSMutableArray" id="cQ2-RT-g7u"/>
+                        <outletCollection property="buttonCollection" destination="ITY-sg-g2I" collectionClass="NSMutableArray" id="aJK-lf-hkK"/>
+                        <outletCollection property="buttonCollection" destination="VR6-DU-IP7" collectionClass="NSMutableArray" id="83D-7t-CMC"/>
+                        <outletCollection property="buttonCollection" destination="hqV-RX-Im5" collectionClass="NSMutableArray" id="Zcf-3h-Tp4"/>
+                        <outletCollection property="buttonCollection" destination="cMX-5F-PlB" collectionClass="NSMutableArray" id="wzN-QJ-uVA"/>
+                        <outletCollection property="buttonCollection" destination="L6k-zd-cEd" collectionClass="NSMutableArray" id="zSF-tE-cpp"/>
+                        <outletCollection property="buttonCollection" destination="vO4-Wg-ZmK" collectionClass="NSMutableArray" id="hQv-AG-Bo2"/>
+                        <outletCollection property="buttonCollection" destination="dvW-G7-euD" collectionClass="NSMutableArray" id="Dq4-jj-GbU"/>
+                        <outletCollection property="buttonCollection" destination="gV0-IT-b1F" collectionClass="NSMutableArray" id="A6c-yM-mi3"/>
+                        <outletCollection property="buttonCollection" destination="Gir-o5-u2S" collectionClass="NSMutableArray" id="SVV-OP-ncH"/>
+                        <outletCollection property="buttonCollection" destination="9fi-VA-vgA" collectionClass="NSMutableArray" id="RS7-p9-XZg"/>
+                        <outletCollection property="buttonCollection" destination="o94-FS-X4Q" collectionClass="NSMutableArray" id="EZK-x5-VUS"/>
+                        <outletCollection property="buttonCollection" destination="YXi-JH-qqj" collectionClass="NSMutableArray" id="y65-s7-WKc"/>
+                        <outletCollection property="buttonCollection" destination="uJx-ww-vP3" collectionClass="NSMutableArray" id="fry-3l-06j"/>
+                        <outletCollection property="buttonCollection" destination="b6Q-ps-IZB" collectionClass="NSMutableArray" id="GKg-aH-oqd"/>
+                        <outletCollection property="buttonCollection" destination="yA2-NW-6t6" collectionClass="NSMutableArray" id="8AA-tJ-PZ6"/>
+                        <outletCollection property="buttonCollection" destination="W3B-ox-00M" collectionClass="NSMutableArray" id="8Eb-GU-RTi"/>
+                        <outletCollection property="buttonCollection" destination="F50-GH-Ve9" collectionClass="NSMutableArray" id="p5P-30-Ms4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGl-XF-W5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
