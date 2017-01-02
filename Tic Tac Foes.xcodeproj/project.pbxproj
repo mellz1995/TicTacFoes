@@ -15,6 +15,7 @@
 		49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */; };
 		49562F0A1E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F091E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png */; };
 		49562F0C1E1A00D500D583E2 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F0B1E1A00D500D583E2 /* bomb.png */; };
+		498715021E1B17350042C663 /* Bomb Exploding Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498715011E1B17350042C663 /* Bomb Exploding Sound Effect.mp3 */; };
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
@@ -43,6 +44,7 @@
 		49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "401px-digitizationgrid1a.png"; sourceTree = "<group>"; };
 		49562F091E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png"; sourceTree = "<group>"; };
 		49562F0B1E1A00D500D583E2 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
+		498715011E1B17350042C663 /* Bomb Exploding Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bomb Exploding Sound Effect.mp3"; sourceTree = "<group>"; };
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		49A090281E175D7700B4B4AB /* Background Music */ = {
 			isa = PBXGroup;
 			children = (
+				498715011E1B17350042C663 /* Bomb Exploding Sound Effect.mp3 */,
 				492142581E17ECC10016E577 /* Splatter.mp3 */,
 				49A0902B1E17632300B4B4AB /* MBC.mp3 */,
 				49A090291E175D9100B4B4AB /* Oh yeah.mp3 */,
@@ -217,6 +220,7 @@
 				49A090361E1770F100B4B4AB /* cross.png in Resources */,
 				97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */,
 				49A090371E1770F100B4B4AB /* nought.png in Resources */,
+				498715021E1B17350042C663 /* Bomb Exploding Sound Effect.mp3 in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
 				49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */,
 				49A090351E1770F100B4B4AB /* board.png in Resources */,

@@ -119,6 +119,20 @@ class GamePlayViewController: UIViewController {
         }
     }()
     
+    //Bomb Explosion Sound
+    var bombExposion: AVAudioPlayer? = {
+        guard let url = Bundle.main.url(forResource: "Bomb Exploding Sound Effect", withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.numberOfLoops = 0
+            return player
+        } catch {
+            return nil
+        }
+    }()
+    
     //Battle music
     var battleMusic: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "Splatter", withExtension: "mp3") else {
@@ -135,7 +149,6 @@ class GamePlayViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-        buttonPressedSound?.play()
         
         let activePosition = sender.tag - 1
         
@@ -158,6 +171,7 @@ class GamePlayViewController: UIViewController {
                 
                 //Set image of the selected position
                 if playerLineDestroyer == true{
+                    bombExposion?.play()
                     sender.setImage(UIImage(named: "bomb.png"), for: [])
                     playerLineDestroyer = false
                     
@@ -180,6 +194,7 @@ class GamePlayViewController: UIViewController {
                     }
                 }
                 else{
+                    buttonPressedSound?.play()
                     sender.setImage(UIImage(named: "nought.png"), for: [])
                     
                     print(sender.tag)
@@ -198,6 +213,7 @@ class GamePlayViewController: UIViewController {
                 
                 //Set image of the selected position
                 if playerLineDestroyer == true{
+                    bombExposion?.play()
                     sender.setImage(UIImage(named: "bomb.png"), for: [])
                     playerLineDestroyer = false
                     
@@ -220,6 +236,7 @@ class GamePlayViewController: UIViewController {
                     }
                 }
                 else{
+                    buttonPressedSound?.play()
                     sender.setImage(UIImage(named: "cross.png"), for: [])
                     gameState[activePosition] = activePlayer
                 }
@@ -245,7 +262,6 @@ class GamePlayViewController: UIViewController {
         
         if player1Moves + player2Moves > 9 {
             playerLineDestroyer = true
-            buttonPressedSound?.play()
             winnerLabel.isHidden = false
             winnerLabel.text = "Choose position"
             UIView.animate(withDuration: 1, animations: {
