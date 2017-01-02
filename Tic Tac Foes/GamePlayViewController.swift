@@ -105,6 +105,7 @@ class GamePlayViewController: UIViewController {
         
     }
     */
+    
     @IBAction func buttonPressed(_ sender: AnyObject) {
         buttonPressedSound?.play()
         
@@ -154,6 +155,26 @@ class GamePlayViewController: UIViewController {
     
     @IBAction func mainMenuButton(_ sender: AnyObject) {
             battleMusic?.stop()
+    }
+    
+    @IBAction func player1LineDestroyerButton(_ sender: AnyObject) {
+        buttonPressedSound?.play()
+    
+    }
+    
+    @IBAction func player1LineFreezerButton(_ sender: AnyObject) {
+    }
+    
+    @IBAction func player1SquareRemoverButton(_ sender: AnyObject) {
+    }
+    
+    @IBAction func player2LineDestroyerButton(_ sender: AnyObject) {
+    }
+    
+    @IBAction func player2LineFreezerButton(_ sender: AnyObject) {
+    }
+    
+    @IBAction func player2SquareRemover(_ sender: AnyObject) {
     }
     
     @IBOutlet weak var player1MovesLabel: UILabel!
