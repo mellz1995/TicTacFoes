@@ -13,6 +13,8 @@
 		49562F041E19DC9300D583E2 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49562F031E19DC9300D583E2 /* GamePlayViewController.swift */; };
 		49562F061E19DD3600D583E2 /* chessnossm9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49562F051E19DD3600D583E2 /* chessnossm9.gif */; };
 		49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */; };
+		49562F0A1E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F091E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png */; };
+		49562F0C1E1A00D500D583E2 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 49562F0B1E1A00D500D583E2 /* bomb.png */; };
 		49A0902A1E175D9100B4B4AB /* Oh yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A090291E175D9100B4B4AB /* Oh yeah.mp3 */; };
 		49A0902C1E17632300B4B4AB /* MBC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A0902B1E17632300B4B4AB /* MBC.mp3 */; };
 		49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */; };
@@ -39,6 +41,8 @@
 		49562F031E19DC9300D583E2 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		49562F051E19DD3600D583E2 /* chessnossm9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chessnossm9.gif; sourceTree = "<group>"; };
 		49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "401px-digitizationgrid1a.png"; sourceTree = "<group>"; };
+		49562F091E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png"; sourceTree = "<group>"; };
+		49562F0B1E1A00D500D583E2 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
 		49A090291E175D9100B4B4AB /* Oh yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oh yeah.mp3"; sourceTree = "<group>"; };
 		49A0902B1E17632300B4B4AB /* MBC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MBC.mp3; sourceTree = "<group>"; };
 		49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGameViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		49A090311E1770F100B4B4AB /* tictactoeimages */ = {
 			isa = PBXGroup;
 			children = (
+				49562F091E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png */,
+				49562F0B1E1A00D500D583E2 /* bomb.png */,
 				4921425E1E17FDD30016E577 /* 090105-Board.jpeg */,
 				49562F071E19DDF800D583E2 /* 401px-digitizationgrid1a.png */,
 				49562F051E19DD3600D583E2 /* chessnossm9.gif */,
@@ -207,12 +213,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49562F0A1E19FDE200D583E2 /* black-bomb-clip-art-at-clker-com-vector-clip-art-online-royalty-Q5fe3u-clipart.png in Resources */,
 				49A090361E1770F100B4B4AB /* cross.png in Resources */,
 				97E36D411E17291000EFDD53 /* LaunchScreen.storyboard in Resources */,
 				49A090371E1770F100B4B4AB /* nought.png in Resources */,
 				97E36D3E1E17291000EFDD53 /* Assets.xcassets in Resources */,
 				49562F081E19DDF800D583E2 /* 401px-digitizationgrid1a.png in Resources */,
 				49A090351E1770F100B4B4AB /* board.png in Resources */,
+				49562F0C1E1A00D500D583E2 /* bomb.png in Resources */,
 				492142591E17ECC10016E577 /* Splatter.mp3 in Resources */,
 				97E36D391E17291000EFDD53 /* Main.storyboard in Resources */,
 				4921425F1E17FDD30016E577 /* 090105-Board.jpeg in Resources */,

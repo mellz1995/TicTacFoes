@@ -109,46 +109,46 @@ class GamePlayViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: AnyObject) {
         buttonPressedSound?.play()
         
-        let activePosition = sender.tag - 1
+        var activePosition = sender.tag - 1
         
-        if gameState[activePosition] == 0 && activeGame{
-            gameState[activePosition] = activePlayer
-            
-            if activePlayer == 1{
-                sender.setImage(UIImage(named: "nought.png"), for: [])
+        if player1LineDestroyer == true{
+            activePlayer = 1
+            if gameState[activePosition] == 0 && activeGame{
+                gameState[activePosition] = activePlayer
+                
+                
+                    activePosition = sender.tag + 6
+                    print(activePosition)
+                    sender.setImage(UIImage(named: "bomb.png"), for: [])
+                
+                
+                //sender.setImage(UIImage(named: "bomb.png"), for: [])
                 player1Moves += 1
                 player1MovesLabel.text = String(player1Moves)
                 activePlayer = 2
+                player1LineDestroyer = false
             }
-                
-            else {
-                sender.setImage(UIImage(named: "cross.png"), for: [])
-                player2Moves += 1
-                player2MovesLabel.text = String(player2Moves)
-                activePlayer = 1
-            }
-            //print(sender.tag)
-            for combination in winningCombinations{
-                if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[2]] == gameState[combination[3]]{
-                    
-                    //We have a winner!
-                    activeGame = false
-                    winnerLabel.isHidden = false
-                    //playAgainButton.isHidden = false
-                    
-                    if gameState[combination[0]] == 1{
-                        winnerLabel.text = "Noughts has won!"
-                    }
-                        
-                    else {
-                        winnerLabel.text = "Crosses has won!"
-                    }
-                    
-                    UIView.animate(withDuration: 1, animations: {
-                        self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
-                        //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
-                    })
+        }
+        
+        else {
+                if gameState[activePosition] == 0 && activeGame{
+                gameState[activePosition] = activePlayer
+            
+                if activePlayer == 1{
+                    sender.setImage(UIImage(named: "nought.png"), for: [])
+                    player1Moves += 1
+                    player1MovesLabel.text = String(player1Moves)
+                    activePlayer = 2
                 }
+                
+                else {
+                    sender.setImage(UIImage(named: "cross.png"), for: [])
+                    player2Moves += 1
+                    player2MovesLabel.text = String(player2Moves)
+                    activePlayer = 1
+                }
+                //print(sender.tag)
+                checkForWin()
             }
         }
     }
@@ -156,10 +156,17 @@ class GamePlayViewController: UIViewController {
     @IBAction func mainMenuButton(_ sender: AnyObject) {
             battleMusic?.stop()
     }
-    
+    var player1LineDestroyer = false
     @IBAction func player1LineDestroyerButton(_ sender: AnyObject) {
+        player1LineDestroyer = true
         buttonPressedSound?.play()
-    
+        winnerLabel.isHidden = false
+        winnerLabel.text = "Choose position"
+        UIView.animate(withDuration: 1, animations: {
+            self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
+            //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
+        })
+        
     }
     
     @IBAction func player1LineFreezerButton(_ sender: AnyObject) {
@@ -180,6 +187,29 @@ class GamePlayViewController: UIViewController {
     @IBOutlet weak var player1MovesLabel: UILabel!
     @IBOutlet weak var player2MovesLabel: UILabel!
     
+    func checkForWin(){
+        for combination in winningCombinations{
+            if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[2]] ==   gameState[combination[3]]{
+                //We have a winner!
+                activeGame = false
+                winnerLabel.isHidden = false
+                //playAgainButton.isHidden = false
+                
+                if gameState[combination[0]] == 1{
+                    winnerLabel.text = "Noughts has won!"
+                }
+                    
+                else {
+                    winnerLabel.text = "Crosses has won!"
+                }
+                
+                UIView.animate(withDuration: 1, animations: {
+                    self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
+                    //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
+                })
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -192,6 +222,8 @@ class GamePlayViewController: UIViewController {
         
         //Play battleMusic
         battleMusic?.play()
+        
+        player1LineDestroyer = false
     }
     
     override func didReceiveMemoryWarning() {
