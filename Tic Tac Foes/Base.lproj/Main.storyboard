@@ -727,7 +727,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Square Remover"/>
                                 <connections>
-                                    <action selector="player1SquareRemoverButton:" destination="eAE-l0-kGn" eventType="touchUpInside" id="ufU-KE-m84"/>
+                                    <action selector="playerSquareRemoverButton:" destination="eAE-l0-kGn" eventType="touchUpInside" id="8pm-YL-uvY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSr-sE-zJx">
