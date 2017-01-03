@@ -16,6 +16,7 @@ class GamePlayViewController: UIViewController {
     var player1Moves = 0
     var player2Moves = 0
     var playerLineDestroyer = false
+    var playerSquareRemover = false
     var activePlayer = 1
     var activeGame = true
     var position = -1
@@ -163,6 +164,46 @@ class GamePlayViewController: UIViewController {
                         }
                     }
                 }
+                else if playerSquareRemover == true{
+                    bombExposion?.play()
+                    sender.setImage(UIImage(named: "bomb.png"), for: [])
+                    playerSquareRemover = false
+                    
+                    //tags that SquareRemover affect
+                    if(x_coord-1 > -1 && y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord-1]] = 0
+                    }
+                    
+                    if(x_coord-1 > -1){
+                        buttonCollection[board[y_coord][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord][x_coord-1]] = 0
+                    }
+                    if(x_coord-1 > -1 && y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord-1]] = 0
+                    }
+                    if(y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord]] = 0
+                    }
+                    if(x_coord+1 < 6 && y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord+1]] = 0
+                    }
+                    if(x_coord+1 < 6){
+                        buttonCollection[board[y_coord][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord][x_coord+1]] = 0
+                    }
+                    if(x_coord+1 < 6 && y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord+1]] = 0
+                    }
+                    if(y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord]] = 0
+                    }
+                }
                 else{
                     buttonPressedSound?.play()
                     sender.setImage(UIImage(named: "nought.png"), for: [])
@@ -207,6 +248,46 @@ class GamePlayViewController: UIViewController {
                         }
                     }
                 }
+                else if playerSquareRemover == true{
+                    bombExposion?.play()
+                    sender.setImage(UIImage(named: "bomb.png"), for: [])
+                    playerSquareRemover = false
+                    
+                    //tags that SquareRemover affect
+                    if(x_coord-1 > -1 && y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord-1]] = 0
+                    }
+                    
+                    if(x_coord-1 > -1){
+                        buttonCollection[board[y_coord][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord][x_coord-1]] = 0
+                    }
+                    if(x_coord-1 > -1 && y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord-1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord-1]] = 0
+                    }
+                    if(y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord]] = 0
+                    }
+                    if(x_coord+1 < 6 && y_coord-1 > -1){
+                        buttonCollection[board[y_coord-1][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord-1][x_coord+1]] = 0
+                    }
+                    if(x_coord+1 < 6){
+                        buttonCollection[board[y_coord][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord][x_coord+1]] = 0
+                    }
+                    if(x_coord+1 < 6 && y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord+1]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord+1]] = 0
+                    }
+                    if(y_coord+1 < 6){
+                        buttonCollection[board[y_coord+1][x_coord]].setImage(UIImage(named: ""), for: [])
+                        gameState[board[y_coord+1][x_coord]] = 0
+                    }
+               }
                 else{
                     buttonPressedSound?.play()
                     SKAction.playSoundFileNamed("MBC.mp3", waitForCompletion: false)
@@ -245,14 +326,28 @@ class GamePlayViewController: UIViewController {
         }
     }
     
+    @IBAction func playerSquareRemoverButton(_ sender: AnyObject) {
+        
+        if player1Moves + player2Moves > 9 {
+            playerSquareRemover = true
+            winnerLabel.isHidden = false
+            winnerLabel.text = "Choose position"
+            UIView.animate(withDuration: 1, animations: {
+                self.winnerLabel.center = CGPoint(x: self.winnerLabel.center.x + 500, y: self.winnerLabel.center.y)
+                //self.playAgainButton.center = CGPoint(x: self.playAgainButton.center.x + 500, y: self.playAgainButton.center.y)
+            })
+        }
+        
+    }
+    
+    
     @IBAction func mainMenuButton(_ sender: AnyObject) {
             battleMusic?.stop()
     }
     @IBAction func player1LineFreezerButton(_ sender: AnyObject) {
     }
     
-    @IBAction func player1SquareRemoverButton(_ sender: AnyObject) {
-    }
+
     
     @IBAction func player2LineDestroyerButton(_ sender: AnyObject) {
     }
