@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SpriteKit
 
 class GamePlayViewController: UIViewController {
     
@@ -21,6 +22,10 @@ class GamePlayViewController: UIViewController {
     var x_coord = -1
     var y_coord = -1
     var buttons = [UIButton]()
+    
+    
+    
+
     
     @IBOutlet weak var player1MovesLabel: UILabel!
     @IBOutlet weak var player2MovesLabel: UILabel!
@@ -96,6 +101,7 @@ class GamePlayViewController: UIViewController {
         }
     }()
     
+    
     //Battle music
     var battleMusic: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "Splatter", withExtension: "mp3") else {
@@ -134,7 +140,8 @@ class GamePlayViewController: UIViewController {
                 
                 //Set image of the selected position
                 if playerLineDestroyer == true{
-                    bombExposion?.play()
+                   // bombExposion?.play()
+                    SKAction.playSoundFileNamed("Bomb Explosion Sound Effect.mp3", waitForCompletion: false)
                     sender.setImage(UIImage(named: "bomb.png"), for: [])
                     playerLineDestroyer = false
                     
@@ -169,6 +176,7 @@ class GamePlayViewController: UIViewController {
                 
                 //change player
                 activePlayer = 2
+                buttonPressedSound?.stop()
             }
             
             //Crosses turn
@@ -176,7 +184,8 @@ class GamePlayViewController: UIViewController {
                 
                 //Set image of the selected position
                 if playerLineDestroyer == true{
-                    bombExposion?.play()
+                    //bombExposion?.play()
+                    SKAction.playSoundFileNamed("Bomb Explosion Sound Effect.mp3", waitForCompletion: false)
                     sender.setImage(UIImage(named: "bomb.png"), for: [])
                     playerLineDestroyer = false
                     
@@ -200,6 +209,7 @@ class GamePlayViewController: UIViewController {
                 }
                 else{
                     buttonPressedSound?.play()
+                    SKAction.playSoundFileNamed("MBC.mp3", waitForCompletion: false)
                     sender.setImage(UIImage(named: "cross.png"), for: [])
                     gameState[activePosition] = activePlayer
                 }
@@ -210,6 +220,7 @@ class GamePlayViewController: UIViewController {
                 
                 //change player
                 activePlayer = 1
+                buttonPressedSound?.stop()
             }
             
             checkForWin()
