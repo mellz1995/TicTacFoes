@@ -22,6 +22,13 @@
 		49A090351E1770F100B4B4AB /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A090321E1770F100B4B4AB /* board.png */; };
 		49A090361E1770F100B4B4AB /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A090331E1770F100B4B4AB /* cross.png */; };
 		49A090371E1770F100B4B4AB /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A090341E1770F100B4B4AB /* nought.png */; };
+		49B285131E1B3D3100A161EA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B285121E1B3D3100A161EA /* Parse.framework */; };
+		49B285151E1B3D3D00A161EA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B285141E1B3D3D00A161EA /* Bolts.framework */; };
+		49B285171E1B473C00A161EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B285161E1B473C00A161EA /* ProfileViewController.swift */; };
+		49B2851D1E1B49AB00A161EA /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B285181E1B49AB00A161EA /* libstdc++.6.dylib */; };
+		49B2851E1E1B49AB00A161EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B285191E1B49AB00A161EA /* SystemConfiguration.framework */; };
+		49B2851F1E1B49AB00A161EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2851A1E1B49AB00A161EA /* AudioToolbox.framework */; };
+		49B285201E1B49AB00A161EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2851B1E1B49AB00A161EA /* libsqlite3.dylib */; };
 		97843A461E17425800BAA222 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97843A451E17425800BAA222 /* EasyButtonViewController.swift */; };
 		97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */; };
 		97B58D0F1E17545600D25DA1 /* HardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */; };
@@ -51,6 +58,13 @@
 		49A090321E1770F100B4B4AB /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
 		49A090331E1770F100B4B4AB /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		49A090341E1770F100B4B4AB /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		49B285121E1B3D3100A161EA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Tic Tac Foes/Audio Files/Parse.framework"; sourceTree = "<group>"; };
+		49B285141E1B3D3D00A161EA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Tic Tac Foes/Audio Files/Bolts.framework"; sourceTree = "<group>"; };
+		49B285161E1B473C00A161EA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		49B285181E1B49AB00A161EA /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		49B285191E1B49AB00A161EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49B2851A1E1B49AB00A161EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49B2851B1E1B49AB00A161EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		97843A451E17425800BAA222 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0C1E17523400D25DA1 /* MediumButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButtonViewController.swift; sourceTree = "<group>"; };
 		97B58D0E1E17545600D25DA1 /* HardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardButtonViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B2851D1E1B49AB00A161EA /* libstdc++.6.dylib in Frameworks */,
+				49B285131E1B3D3100A161EA /* Parse.framework in Frameworks */,
+				49B2851F1E1B49AB00A161EA /* AudioToolbox.framework in Frameworks */,
+				49B2851E1E1B49AB00A161EA /* SystemConfiguration.framework in Frameworks */,
+				49B285201E1B49AB00A161EA /* libsqlite3.dylib in Frameworks */,
+				49B285151E1B3D3D00A161EA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +131,26 @@
 			path = tictactoeimages;
 			sourceTree = "<group>";
 		};
+		49B2851C1E1B49AB00A161EA /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49B285181E1B49AB00A161EA /* libstdc++.6.dylib */,
+				49B285191E1B49AB00A161EA /* SystemConfiguration.framework */,
+				49B2851A1E1B49AB00A161EA /* AudioToolbox.framework */,
+				49B2851B1E1B49AB00A161EA /* libsqlite3.dylib */,
+			);
+			name = "System Frameworks";
+			path = "../../../Downloads/ParseServerStarterProject 3";
+			sourceTree = "<group>";
+		};
 		97E36D271E17291000EFDD53 = {
 			isa = PBXGroup;
 			children = (
 				97E36D321E17291000EFDD53 /* Tic Tac Foes */,
 				97E36D311E17291000EFDD53 /* Products */,
+				49B2851C1E1B49AB00A161EA /* System Frameworks */,
+				49B285141E1B3D3D00A161EA /* Bolts.framework */,
+				49B285121E1B3D3100A161EA /* Parse.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +168,7 @@
 				97E36D331E17291000EFDD53 /* AppDelegate.swift */,
 				97E36D351E17291000EFDD53 /* MainMenu.swift */,
 				97E36D371E17291000EFDD53 /* Main.storyboard */,
+				49B285161E1B473C00A161EA /* ProfileViewController.swift */,
 				49562F031E19DC9300D583E2 /* GamePlayViewController.swift */,
 				4921425C1E17F48C0016E577 /* Test4x4ViewController.swift */,
 				49A0902F1E176B1400B4B4AB /* TestGameViewController.swift */,
@@ -247,6 +283,7 @@
 				4921425D1E17F48C0016E577 /* Test4x4ViewController.swift in Sources */,
 				49A090301E176B1400B4B4AB /* TestGameViewController.swift in Sources */,
 				97B58D0D1E17523400D25DA1 /* MediumButtonViewController.swift in Sources */,
+				49B285171E1B473C00A161EA /* ProfileViewController.swift in Sources */,
 				49562F041E19DC9300D583E2 /* GamePlayViewController.swift in Sources */,
 				97B58D111E17588000D25DA1 /* MusicSwitchViewController.swift in Sources */,
 				97E36D3C1E17291000EFDD53 /* Tic_Tac_Foes.xcdatamodeld in Sources */,
@@ -375,6 +412,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHJKR7KP9V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tic\\ Tac\\ Foes/Audio\\ Files",
+					"$(PROJECT_DIR)/Tic\\ Tac\\ Foes/Audio\\ Files",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tic Tac Foes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisapps.Tic-Tac-Foes";
@@ -388,6 +431,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CHJKR7KP9V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tic\\ Tac\\ Foes/Audio\\ Files",
+					"$(PROJECT_DIR)/Tic\\ Tac\\ Foes/Audio\\ Files",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tic Tac Foes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisapps.Tic-Tac-Foes";

@@ -38,6 +38,10 @@ class MainMenu: UIViewController {
         }
     }()
     
+    @IBAction func profileButton(_ sender: UIButton) {
+        buttonPressedSound?.play()
+        mainMenuMusic?.stop()
+    }
     
     //Buttons
     @IBAction func SinglePlayerButtonAction(_ sender: Any) {

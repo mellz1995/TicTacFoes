@@ -12,6 +12,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="fKN-0h-cNQ">
+            <objects>
+                <viewController id="boG-Eb-j1y" customClass="ProfileViewController" customModule="Tic_Tac_Foes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVH-w2-nYG"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKR-xG-qWQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mpw-Iy-tSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slY-iq-8ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="-786"/>
+        </scene>
         <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -24,7 +42,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-x3-4A2">
                                 <rect key="frame" x="121" y="86.5" width="196" height="77.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="v6e-lv-ga0"/>
@@ -74,8 +92,12 @@
                                 <state key="normal" title="Profile">
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="profileButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vk6-hx-Ia9"/>
+                                    <segue destination="boG-Eb-j1y" kind="showDetail" id="N8O-hl-Kbl"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8c8-tq-bk5">
                                 <rect key="frame" x="16" y="180" width="343" height="192"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-V8-46N">
@@ -84,7 +106,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Gh-JQI">
                                 <rect key="frame" x="16" y="28" width="65" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="GrE-ag-rQl"/>
@@ -102,7 +124,7 @@
                                     <color key="titleColor" red="0.98088409389999998" green="0.98147769959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-TR-eUt">
                                 <rect key="frame" x="72" y="92" width="51" height="66.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="woY-oq-Nbi"/>
