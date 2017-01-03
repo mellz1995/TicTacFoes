@@ -17,27 +17,48 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Basic Code for adding a user
-        let user = PFObject(className: "Users")
-        user["name"] = "Melvin"
-        user.saveInBackground { (success, error) in
-            if success {
-                print("Object saved")
-            }
-            
-            else{
-                if let error = error{
-                    print(error)
-                }
-                
-                else {
-                    print(error!)
+//        let user = PFObject(className: "Users")
+//        user["name"] = "Melvin"
+//        user.saveInBackground { (success, error) in
+//            if success {
+//                print("Object saved")
+//            }
+//            
+//            else{
+//                if let error = error{
+//                    print(error)
+//                }
+//                
+//                else {
+//                    print(error!)
+//                }
+//            }
+//        }
+        
+        let query = PFQuery(className: "Users")
+        query.getObjectInBackground(withId: "AFoO7HqEF6") {( object, error) in
+        
+            if error != nil {
+                print (error!)
+            } else {
+                if let user = object {
+                    user["name"] = "Kristen"
+                    
+                    user.saveInBackground(block: { (success, error) in
+                        
+                        if success {
+                            print("Saved")
+                        } else {
+                            print("Error")
+                        }
+                    })
                 }
             }
         }
         
     }
 
-    override func didReceiveMemoryWarning() {
+   override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
