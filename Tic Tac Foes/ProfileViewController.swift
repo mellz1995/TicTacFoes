@@ -16,10 +16,23 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let testObject = PFObject(className: "Test Object 2")
-        testObject["foo"] = "bar"
-        testObject.saveInBackground { (success, error) -> Void in
-            print("Object has been saved")
+        //Basic Code for adding a user
+        let user = PFObject(className: "Users")
+        user["name"] = "Melvin"
+        user.saveInBackground { (success, error) in
+            if success {
+                print("Object saved")
+            }
+            
+            else{
+                if let error = error{
+                    print(error)
+                }
+                
+                else {
+                    print(error!)
+                }
+            }
         }
         
     }
