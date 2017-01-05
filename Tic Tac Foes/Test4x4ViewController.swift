@@ -43,7 +43,7 @@ class Test4x4ViewController: UIViewController {
     var activePlayer = 1
     
     // 0 = empty, 1 = naughts, 2 = crosses
-    //Notice there are 16 0s to comidate for 16 spaces
+    //Notice there are 16 0s to acccomidate for 16 spaces
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     var activeGame = true

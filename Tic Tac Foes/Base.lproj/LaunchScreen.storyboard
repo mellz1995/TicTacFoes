@@ -32,9 +32,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="HRl-86-eir" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="82" id="12R-4W-6ps"/>
+                            <constraint firstItem="HRl-86-eir" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="229" id="OiO-L1-4DI"/>
                             <constraint firstItem="HRl-86-eir" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PFq-V5-6q5"/>
                             <constraint firstItem="HRl-86-eir" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="S18-ol-8Aj"/>
-                            <constraint firstItem="HRl-86-eir" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="229" id="Vcx-Sl-Qiq"/>
                         </constraints>
                     </view>
                 </viewController>
